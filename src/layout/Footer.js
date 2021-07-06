@@ -1,52 +1,37 @@
 import React from "react";
-import { Grid, GridColumn, Icon } from "semantic-ui-react";
+import {
+    Container,
+    Image,
+    List,
+    Segment,
+  } from 'semantic-ui-react';
 
 function Footer() {
   return (
+
     <div className="footer">
-      <Grid columns={2} padded>
-        <Grid.Row>
-          <GridColumn floated="left" width={1}>
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href="https://github.com/cumalitezcan/Hrms-Frontend">
-                  Frontend
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://github.com/cumalitezcan/HumanResourceManagementSystem">
-                  Backend
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Hakkımızda</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Destek</a>
-              </li>
-            </ul>
-          </GridColumn>
-
-          <GridColumn floated="left" width={1}>
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <Icon name="linkedin " />
-              </li>
-              <li class="list-inline-item">
-                <Icon name="github square" />
-              </li>
-              <li class="list-inline-item">
-                <Icon name="twitter square" />
-              </li>
-              <li class="list-inline-item">
-                <Icon name="facebook square" />
-              </li>
-            </ul>
-          </GridColumn>
-        </Grid.Row>
-
-      </Grid>
+    <Segment inverted style={{ margin: '33em 0em 0em', padding: '1em 0em' }} vertical>
+      <Container textAlign='center'>
+        <Image src='#' centered size='mini' />
+        <List horizontal inverted divided link size='medium'>
+          <List.Item as='a' href='#'>
+            Site Map
+          </List.Item>
+          <List.Item as='a' href='#'>
+            Contact Us
+          </List.Item>
+          <List.Item as='a' href='#'>
+            Terms and Conditions
+          </List.Item>
+          <List.Item as='a' href='#'>
+            Privacy Policy
+          </List.Item>
+        </List>
+      </Container>
+    </Segment>
+        
     </div>
+
   );
 }
 

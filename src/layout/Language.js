@@ -8,7 +8,9 @@ function Language() {
              <Dropdown item text='Language'>
                  <Dropdown.Menu>
                      <Dropdown.Item>English</Dropdown.Item>
+                     <Dropdown.Item>Turkish</Dropdown.Item>
                      <Dropdown.Item>French</Dropdown.Item>
+                     <Dropdown.Item>German</Dropdown.Item>
                  </Dropdown.Menu>
              </Dropdown>
         </div>
