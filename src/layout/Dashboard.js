@@ -6,6 +6,8 @@ import JobAdvertsList from '../pages/adverts/JobAdvertsList';
 import EmployeeList from '../pages/users/Employee';
 import EmployerList from '../pages/users/Employer';
 import { Route } from "react-router";
+import JobAdvertForm from '../pages/formik/JobAdvertForm';
+import CandidateCv from '../pages/users/CandidateCV';
 
 
 function Dashboard() {
@@ -21,7 +23,9 @@ function Dashboard() {
                             <Route exact path="/employers" component={EmployerList} />
                             <Route exact path="/employees" component={EmployeeList} />
                             <Route exact path="/candidates" component={CandidateList} />
-                            <Route exact path="/jobAdverts" component={JobAdvertsList} />
+                            <Route exact path="/candidateCV" component={CandidateCv} />
+                            <Route exact path="/addJobAdvert" component={JobAdvertForm} />
+                            <Route exact path="/JobAdverts" component={JobAdvertsList} />
                          </Grid.Column>
                  </Grid.Row>
              </Grid>
