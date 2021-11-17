@@ -1,3 +1,16 @@
+
+## Hrms-Frontend
+Human Resource Management System application with React Js
+
+### Technologies and Techniques
+
+- Redux
+- Axios
+- Semantic UI
+- Formik
+- Yup
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
